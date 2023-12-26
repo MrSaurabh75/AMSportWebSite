@@ -1,10 +1,10 @@
 *{
     padding: 0px;
     margin:0px;
+    font-family: "Poppins" ,sans-serif;
 }
 body{
     width: 100%;
-    background: radial-gradient(#fff, #ffd6d6);
 }
 
 /* Header Start */
@@ -14,8 +14,14 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    /* background-color: #E3E6f3; */
-    /* box-shadow:0 5px 15px rgba(0, 0, 0, 0.06); */
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.20);
+    position: sticky;
+    top:0;
+    left:0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+#header a>img{
+  height: 80px;
 }
 #navbar{
     display: flex;
@@ -25,7 +31,7 @@ body{
 #navbar li{
     list-style: none;
     padding:0 20px;
-    position: relative;
+    position: relative;    
 }
 #navbar li a{
     text-decoration: none;
@@ -33,18 +39,19 @@ body{
     font-weight: 650;
     color: black;
     transition: 0.5s ease;
-    font-family:"Poppins", sans-serif;;
+    font-family:"Poppins", sans-serif;
+    font-size: larger;
 }
 #navbar li a:hover,
 #navbar li a.active{
-    color:  #563434;
+    color:  #ca2e2e;
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
     content: "";
     width:30%;
     height:2px;
-    background-color: #088178;
+    background-color: #ca2e2e;
     position: absolute;
     bottom: -4px;
     left:20px;
@@ -52,7 +59,156 @@ body{
 
 /* Home Page */
 
-#hero{
-    height:90vh;
-    width: 100%;
-}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: radial-gradient(#fff, #ffd6d6);
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    font-family: "Poppins";
+  }
+  .col-2 p{
+    font-weight: 500;
+  }
+
+  
+  .col-2 img {
+    max-width: 100%;
+    padding: 0 0;
+  }
+  
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #ca2e2e;
+    color: #ffffff;
+    padding: 8px 30px;
+    margin: 25px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+  }
+  .btn{
+    margin:0 150px;
+  }
+  .btn:hover {
+    background: #563434;
+  }
+  
+  /* Features */
+
+  .section-p1{
+    padding:40px 80px;
+  }
+  .fe-box img{
+    height: 200px;
+  }
+  #feature{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #feature .fe-box{
+    width:180px;
+    text-align: center;
+    font-size: 30px;
+    padding:40px 80px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.07);
+    border: 2px solid #c5cac6;
+    border-radius: 30px;
+  }
+  #feature .fe-box img{
+    width:100%;
+    margin-bottom: 10px;
+  }
+  #feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.15);
+  }
+  #feature .fe-box h6{
+    display: inline-block;
+    padding:9px 8px 6px 8px;
+    line-height: 1;
+    border: 4px;
+    border-radius: 4px;
+    color:#ca2e2e;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+
+  /* Product */
+
+  #product1{
+    text-align: center;
+    background-color: #ffffff;
+
+  }
+  #product1 .pro{
+    width: 23px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #c5cac6;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.07);
+    margin: 15px 0;
+    transition: 0.2s ease;
+  }
+  #product1 .pro:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.15);  
+  }
+  #product1 .pro .disc{
+    text-align: start;
+    padding:10px 0;
+  }
+  #product1 .pro .disc span{
+    color:#606063;
+    font-size: 12px;
+  }
+  #product1 .pro .disc h5{
+    padding-top:7px;
+    color:#1a1a1a;
+    font-size: 14px; 
+  }
+  #product1 .pro .disc .star{
+    font-size: 12px;
+    color:rgb(235, 171, 11)
+  }
+  #product1 .pro .disc h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#ca2e2e;
+  }
+  #product1 .pro .cart{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #ca2e2e;
+  }
+  #product1 .pro img{
+    width:100%;
+    border-radius: 20px;
+  }
+
