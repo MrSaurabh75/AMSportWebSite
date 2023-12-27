@@ -19,6 +19,7 @@ body{
     top:0;
     left:0;
     background: radial-gradient(#fff, #ffd6d6);
+    z-index: 999;
 }
 #header a>img{
   height: 80px;
@@ -31,7 +32,7 @@ body{
 #navbar li{
     list-style: none;
     padding:0 20px;
-    position: relative;    
+    position: relative; 
 }
 #navbar li a{
     text-decoration: none;
@@ -159,10 +160,15 @@ body{
   #product1{
     text-align: center;
     background-color: #ffffff;
-
+  }
+  #product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
   }
   #product1 .pro{
-    width: 23px;
+    width: 23%;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #c5cac6;
@@ -171,6 +177,12 @@ body{
     box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.07);
     margin: 15px 0;
     transition: 0.2s ease;
+    position: relative;
+
+  }
+  #product1 .pro img{
+    width:100%;
+    border-radius: 20px;
   }
   #product1 .pro:hover{
     box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.15);  
@@ -190,7 +202,7 @@ body{
   }
   #product1 .pro .disc .star{
     font-size: 12px;
-    color:rgb(235, 171, 11)
+    color:rgb(243, 181, 25);
   }
   #product1 .pro .disc h4{
     padding-top: 7px;
@@ -203,12 +215,63 @@ body{
     height:40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #e8f6ea;
-    font-weight: 500;
+    background-color: #b6d7bb;
     color: #ca2e2e;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
   }
-  #product1 .pro img{
-    width:100%;
-    border-radius: 20px;
+  #product1 h2{
+    font-size: 40px;
+    padding:40px 0 0 0;
+    color: rgb(97, 97, 97);
+  }
+  #product1 p{
+    color:#606063;
+    font-size: 15px;
   }
 
+.sec-m1{
+  margin-top: 40px;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("b21.jpg");
+  width: 100%;
+  height:90vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4{
+  color:black;
+  font-size: 16px;
+}
+#banner h2{
+  color:black;
+  font-size: 30px;
+  padding:10px 0;
+}
+#banner h2 span{
+  color: #c61515;
+}
+.btn2{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 30px;
+  color: rgb(245, 243, 243);
+  background-color: #c61515;
+  border-radius: 10px;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  transition: background 0.2s;
+}
+#banner .btn2:hover{
+  color: black;
+  background:radial-gradient(#fff, #ffd6d6);
+}
