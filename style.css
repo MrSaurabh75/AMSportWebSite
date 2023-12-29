@@ -159,7 +159,7 @@ body{
 
   #product1{
     text-align: center;
-    background-color: #ffffff;
+    background-color: whitesmoke;
   }
   #product1 .pro-container{
     display: flex;
@@ -275,3 +275,53 @@ body{
   color: black;
   background:radial-gradient(#fff, #ffd6d6);
 }
+#newsletter{
+  height: 100px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap ;
+  align-items: center;
+  background-image:  url("signupimg.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  margin-bottom: 40px;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 900;
+  color:rgb(34, 32, 32);
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 500;
+  color:rgb(34, 32, 32);
+}
+#newsletter p span{
+  font-size: 14px;
+  font-weight: 500;
+  color:#f40000;
+}
+#newsletter input{
+  height:3.125rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 100%;
+  border:1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+}
+#newsletter .btn2:hover{
+    color: black;
+    background:radial-gradient(#fff, #ffd6d6);
+}
+#newsletter button{
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
